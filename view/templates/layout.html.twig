@@ -1,0 +1,78 @@
+<!doctype html>
+<html  lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Derecho Informatico</title>
+        <meta name="description" content="Sito web">
+        <meta name="author" content="JEE">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        {% block stylesheet %}
+            <link rel="stylesheet" href="{{ constant('PATH_URL_CSS') }}layout.css" type="text/css" /> 
+            <link rel="stylesheet" href="{{ constant('PATH_URL_VENDOR') }}twbs/bootstrap/dist/css/bootstrap.min.css" type="text/css" />
+            <link rel="stylesheet" href="{{ constant('PATH_URL_VENDOR') }}font-awesome-4.7.0/css/font-awesome.min.css" type="text/css" />
+        {% endblock %}
+        {% block otherStylesheet  %}
+        {% endblock %}
+    </head>
+    <body>
+        {% block javascripts %}
+            <script src="{{ constant('PATH_URL_VENDOR') }}jquery/jquery-3.2.1.min.js"></script>
+            <script src="{{ constant('PATH_URL_VENDOR') }}ckeditor/ckeditor.js"></script>
+        {% endblock %}
+        {% block otherJavascripts %}
+        {% endblock %}
+        {% block  header %}
+            <div id="header" class="col-md-8 col-md-offset-2">
+                <div id="logo" class="text-center">
+                    <h1>LOGO DEL ESTUDIO</h1>
+                </div>
+                <div id="menu">
+                    <div class="col-md-8">
+                        <ul class="nav nav-tabs">
+                            <li role="presentation" class="active"><a href="#">Inicio</a></li>
+                            <li role="presentation"><a href="#">Servicios</a></li>
+                            <li role="presentation"><a href="#">Compliance</a></li>
+                            <li role="presentation"><a href="#">Contacto</a></li>
+                        </ul>
+                    </div>
+                    <div  class="col-md-4 text-right">
+                        <a class="header-link" href="#" ><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i></a>
+                        <a class="header-link" href="#"> <i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a>
+                        <a class="header-link" href="#"><i class="fa fa-envelope-o fa-2x" aria-hidden="true"></i></a>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        {% endblock %}
+        <div id="container" class="col-md-8 col-md-offset-2">
+            {% block container %}
+                <div id="editor1" contenteditable="true">
+                    <h1>Inline Editing in Action!</h1>
+                    <p>The "div" element that contains this text is now editable.
+                </div>
+                <script>
+                    // Turn off automatic editor creation first.
+                    CKEDITOR.disableAutoInline = true;
+                    CKEDITOR.inline('editor1');
+                </script>
+            {% endblock %}
+        </div>
+        {% block modalLoading %}
+            <!-- Modal -->
+            <div class="modal fade" id="modalLoading" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-body text-center">
+                            <img src="{{ constant('PATH_URL_IMG') }}loading4.gif" style="height: 180px;" alt="Logo de cargando">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        {% endblock %}
+        {% block footer %}
+            <footer  id="footer" class="col-md-12 " >
+                <h4 class="text-center">Maria Delia Esposito Abogados © 1999-2017</h4>
+            </footer>
+        {% endblock %}
+    </body>
+</html>

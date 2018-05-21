@@ -1,0 +1,47 @@
+{% extends "layout.html.twig" %}
+
+{% block otherStylesheet  %}
+{% endblock %}
+
+{% block otherJavascripts %}
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            // Turn off automatic editor creation first.
+            CKEDITOR.disableAutoInline = true;
+            CKEDITOR.inline('editor1');
+        }); //END READY
+    </script>
+{% endblock %}
+
+{% block container %}
+    <div class="row">
+        <div   id="editor1"   contenteditable="true" class="col-md-7">
+            <h1>Inline Editing in Action!</h1>
+            <p>The "div" element that contains this text is now editable.
+
+                EL DESPACHO
+
+                Ponce de León Abogados se compone de un grupo de profesionales con una dilatada experiencia en Derecho Urbanístico y Medio Ambiental en todas las materias relacionadas con la gestión, planeamiento, desarrollo urbanístico y protección del medio ambiente.
+
+                Nuestra Firma cuenta con auténticos especialistas y asesores de Ayuntamientos y otras entidades de derecho público que se caracterizan por la atención personalizada a las autoridades y funcionarios integrantes en las mismas, así como por el asesoramiento y defensa integral de los asuntos encomendados.
+
+                Ponce de León Abogados tiene también como objetivo convertirse en un referente del derecho de entretenimiento y de la protección de la propiedad intelectual y derecho del honor, y de ahí que haya incorporado a profesionales con una dilatada experiencia en derecho deportivo y en el asesoramiento a clubes deportivos y federaciones deportivas, así como especialistas en materia de marcas y patentes.
+
+                En el Área Penal contamos con profesionales con más de tres décadas de experiencia, que han asumido la defensa de asuntos de envergadura en todo el territorio nacional, entre otros Delitos contra la Administración Pública y contra la Administración de Justicia.
+
+                Nuestro Equipo se completa con especialistas del área financiera que se encargan de asesorar en materia tributaria, mercantil y contable a nuestros clientes en su mayoría pequeñas y medianas empresas que demandan un trato cercano y personalizado en la resolución de los problemas fiscales.
+            </p>
+        </div>
+        <div  id="barra-amarilla" class="col-md-3 col-md-offset-1 ">
+            asdfasdfasdfa
+            asdfas
+        </div>
+        <div class="clearfix"></div>
+
+    </div>
+
+{% endblock %}
+
+
+

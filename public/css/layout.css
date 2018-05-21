@@ -1,0 +1,88 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 12-jun-2017, 22:34:38
+    Author     : kibunke
+*/
+
+body{
+    background: none !important;
+    margin: 0;
+}
+.full-screen {
+    background: url(../images/bg-penal-penitenciario.jpg) no-repeat center 0px fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Open Sans', sans-serif;
+    –webkit-overflow-scrolling: touch;
+}
+/**
+Header
+*/
+#header{
+    background-color: #efefef !important;
+    padding: 0px;
+}
+#logo{
+    margin: 70px;
+}
+#menu{
+    background-color: black;
+}
+.header-link{
+    margin-left: 5px;
+}
+#menu a {
+    color: white;
+}
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover{
+    color: black !important;
+}
+.nav > li > a:focus, .nav > li > a:hover{
+    color: black !important;
+}
+a.header-link:hover{
+    color: #0066cc !important;
+}
+#menu .nav-tabs{
+    border-bottom: none;
+}
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover{
+    border-top-color: black !important;
+}
+#barra-amarilla{
+    height: 370px;
+    background-color: #fecc00;
+}
+/**
+*****************************************************************************************************************
+*/
+/**
+Container
+*/
+#container{
+
+}
+/**
+*****************************************************************************************************************
+*/
+/**
+Footer
+*/
+#footer{
+    background-color:  black;
+    color: white;
+    border-radius: 5px;
+}
+/**
+*****************************************************************************************************************
+*/
